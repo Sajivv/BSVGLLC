@@ -11,30 +11,14 @@ class BSVGNavBar extends Component {
             Big Sky Venture Group
           </Typography>
           {/* Add Button components for each navigation item */}
-          <Button sx={{ color: '#000', mr: 2, '&:hover': { backgroundColor: 'lightgray' } }}>
-            About
-          </Button>
-          <Button sx={{ color: '#000', mr: 2, '&:hover': { backgroundColor: 'lightgray' } }}>
-            Food Ingredients
-          </Button>
-          <Button sx={{ color: '#000', mr: 2, '&:hover': { backgroundColor: 'lightgray' } }}>
-            Grains & Feed Ingredients
-          </Button>
-          <Button sx={{ color: '#000', mr: 2, '&:hover': { backgroundColor: 'lightgray' } }}>
-            Energy
-          </Button>
-          <Button sx={{ color: '#000', mr: 2, '&:hover': { backgroundColor: 'lightgray' } }}>
-            Growers & Suppliers
-          </Button>
-          <Button sx={{ color: '#000', mr: 2, '&:hover': { backgroundColor: 'lightgray' } }}>
-            Assets
-          </Button>
-          <Button sx={{ color: '#000', mr: 2, '&:hover': { backgroundColor: 'lightgray' } }}>
-            Brands
-          </Button>
-          <Button sx={{ color: '#000', mr: 2, '&:hover': { backgroundColor: 'lightgray' } }}>
-            Contact Us
-          </Button>
+          <Button>About</Button>
+          <Button>Food Ingredients</Button>
+          <Button>Grains & Feed Ingredients</Button>
+          <Button>Energy</Button>
+          <Button>Growers & Suppliers</Button>
+          <Button>Assets</Button>
+          <Button>Brands</Button>
+          <Button>Contact Us</Button>
           {/* The Get Price button has a different style */}
           <Button
             variant="contained"
