@@ -1,7 +1,8 @@
 import logo from './logo.svg';
-import React from 'react'
-import {Route, Routes} from 'react-router-dom';
 import './App.css';
+
+import React from 'react'
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import HomePage from './pages/HomePage';
 
 class App extends React.Component {
@@ -9,9 +10,11 @@ class App extends React.Component {
   render() {
     return ( 
       <div className='App'>
+        <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />} />
         </Routes>
+        </BrowserRouter>
       </div>
     )
   }
