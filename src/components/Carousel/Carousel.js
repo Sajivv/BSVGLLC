@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { ThemeProvider } from '@emotion/react';
+import { Button } from '@mui/material';
+import './Carousel.css'
 
 function Carousel({images}) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,11 +19,11 @@ function Carousel({images}) {
     };
   
     return (
-      <div>
-        <button onClick={goToPrevious}>Previous</button>
-        <img src={images[currentIndex]} alt="Carousel" />
-        <button onClick={goToNext}>Next</button>
-      </div>
+        <div className='carousel-div'>
+          <Button onClick={goToPrevious}>Previous</Button>
+          <img src={images[currentIndex]} alt="Carousel" />
+          <Button onClick={goToNext}>Next</Button>
+        </div>
     )
 }
 

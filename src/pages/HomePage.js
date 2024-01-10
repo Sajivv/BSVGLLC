@@ -2,7 +2,7 @@ import React from 'react';
 import BSVGNavBar from '../components/BSVGNavBar';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'
-import Carousel from '../components/Carousel';
+import Carousel from '../components/Carousel/Carousel';
 
 function HomePage (props) {
     const images = [
@@ -13,7 +13,7 @@ function HomePage (props) {
     ]
         return (
             <ThemeProvider theme={theme}>
-                <BSVGNavBar/>
+                <BSVGNavBar/> 
                 <Carousel images={images}/>
             </ThemeProvider>
         )
