@@ -19,11 +19,13 @@ function Carousel({images}) {
     };
   
     return (
-        <div className='carousel-div'>
+      <div style={{width: "100%", height: "100%"}}>
           <Button onClick={goToPrevious}>Previous</Button>
-          <img src={images[currentIndex]} alt="Carousel" />
-          <Button onClick={goToNext}>Next</Button>
+        <div>
+          <img src={images[currentIndex]} alt="Carousel" style={{objectFit: "contain", width: '300px', height: '100px'}}/>
         </div>
+          <Button onClick={goToNext}>Next</Button>
+      </div>
     )
 }
 

@@ -3,6 +3,7 @@ import BSVGNavBar from '../components/BSVGNavBar';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'
 import Carousel from '../components/Carousel/Carousel';
+import './HomePage.css'
 
 function HomePage (props) {
     const images = [
@@ -13,8 +14,14 @@ function HomePage (props) {
     ]
         return (
             <ThemeProvider theme={theme}>
-                <BSVGNavBar/> 
-                <Carousel images={images}/>
+                <div className='parent-div'>
+                    <div>
+                        <BSVGNavBar/> 
+                    </div>
+                    <div className='carousel-div'>
+                        <Carousel images={images}/> 
+                    </div>
+                </div>
             </ThemeProvider>
         )
 
