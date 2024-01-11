@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Button, Container } from '@mui/material';
+import { AppBar, Toolbar, Button, IconButton, Icon } from '@mui/material';
 import React from 'react';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -19,8 +19,10 @@ function BSVGNavBar() {
             <Button>Contact Us</Button>
           </div>
           <div>
-          <InstagramIcon />
-          <LinkedInIcon/>
+            <IconButton> <InstagramIcon /> </IconButton>
+            <IconButton> <LinkedInIcon/> </IconButton>
+          
+          
           </div>
         </Toolbar>
     </AppBar>

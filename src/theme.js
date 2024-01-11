@@ -21,6 +21,17 @@ const theme = createTheme({
                     color: '#e6f6e9',
                     mr: 2,
                     '&:hover': { backgroundColor: 'green' },
+                    fontFamily: 'sans-serif',
+                    fontSize: '1rem', // Specify font size
+                    fontWeight: 500,
+                    textTransform: 'none'
+                }
+            }
+        },
+        MuiIconButton: {
+            styleOverrides: {
+                root: {
+                    color: '#e6f6e9'
                 }
             }
         }
