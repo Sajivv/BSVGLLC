@@ -3,7 +3,9 @@ import {createTheme} from "@mui/material/styles";
 
 const theme = createTheme({
     palette: {
-        primary: deepOrange,
+        primary: {
+            main: '#006314'
+        },
         secondary: {
             main: yellow[100],
             dark: yellow[900]
@@ -12,11 +14,11 @@ const theme = createTheme({
     components: {
         MuiButton: {
             defaultProps: {
-                variant: "contained",
+                
             },
             styleOverrides: {
                 root: {
-                    color: '#000',
+                    color: '#e6f6e9',
                     mr: 2,
                     '&:hover': { backgroundColor: 'green' },
                 }

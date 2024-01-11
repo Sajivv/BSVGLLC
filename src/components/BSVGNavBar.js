@@ -1,39 +1,31 @@
-import React, { Component } from 'react';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { AppBar, Toolbar, Button, Container } from '@mui/material';
+import React from 'react';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-class BSVGNavBar extends Component {
+function BSVGNavBar() {
 
-  render() {
-    return (
-      <AppBar position="static" elevation={0} sx={{ backgroundColor: '#fff', color: '#000' }}>
-        <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1, color: 'red' }}>
-            Big Sky Venture Group
-          </Typography>
-          {/* Add Button components for each navigation item */}
-          <Button>About</Button>
-          <Button>Food Ingredients</Button>
-          <Button>Grains & Feed Ingredients</Button>
-          <Button>Energy</Button>
-          <Button>Growers & Suppliers</Button>
-          <Button>Assets</Button>
-          <Button>Brands</Button>
-          <Button>Contact Us</Button>
-          {/* The Get Price button has a different style */}
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: 'red',
-              color: '#fff',
-              '&:hover': { backgroundColor: 'darkred' },
-            }}
-          >
-            Get Price
-          </Button>
+  return (
+    <AppBar style={{ minHeight: '50px' }}>
+        <Toolbar style={{display: 'flex', justifyContent:'space-between'}}>
+          <div>
+            <div style={{width: '40px', height: '40px', backgroundColor: '#FFFF' }}/>
+          </div>
+          <div>
+            <Button>About Us</Button>
+            <Button>Grain Ingredients</Button>
+            <Button>Feed Ingredients</Button>
+            <Button>Transloading</Button>
+            <Button>Contact Us</Button>
+          </div>
+          <div>
+          <InstagramIcon />
+          <LinkedInIcon/>
+          </div>
         </Toolbar>
-      </AppBar>
-    );
-  }
+    </AppBar>
+
+  )
 }
 
 export default BSVGNavBar;
