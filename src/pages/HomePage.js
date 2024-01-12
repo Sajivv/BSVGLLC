@@ -15,7 +15,7 @@ function HomePage (props) {
         return (
             <ThemeProvider theme={theme}>
                 <div className='parent-div'>
-                    <div>
+                    <div className='nav-bar-div'>
                         <BSVGNavBar/> 
                     </div>
                     <div className='carousel-div'>
