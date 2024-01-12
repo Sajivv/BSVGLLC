@@ -6,7 +6,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 function BSVGNavBar() {
 
   return (
-    <AppBar>
+    <div>
+    <AppBar position='static'>
         <Toolbar style={{display: 'flex', justifyContent:'space-between'}}>
           <div>
             <div style={{width: '40px', height: '40px', backgroundColor: '#FFFF' }}/>
@@ -24,6 +25,7 @@ function BSVGNavBar() {
           </div>
         </Toolbar>
     </AppBar>
+    </div>
 
   )
 }
