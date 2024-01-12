@@ -5,6 +5,7 @@ import theme from '../theme'
 import Carousel from '../components/Carousel/Carousel';
 import './HomePage.css'
 import BSVGNavBar2 from '../components/BSVGNavBar/BSVGNavBar2';
+import Summaries from '../components/Summaries/Summaries';
 
 function HomePage (props) {
     const images = [
@@ -17,9 +18,8 @@ function HomePage (props) {
             <ThemeProvider theme={theme}>
                 <div className='parent-div'>
                     <BSVGNavBar/>
-                    <div className='carousel-div'>
-                        <Carousel images={images}/> 
-                    </div>
+                    <Carousel images={images}/>
+                    <Summaries/>
                 </div>
             </ThemeProvider>
         )

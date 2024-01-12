@@ -21,11 +21,11 @@ function Carousel({images}) {
     return (
       <div className='carousel-parent-div'>
         <div className='imgs-div'>
-          <img src={images[currentIndex]} alt="Carousel" style={{width: "100%", height: "auto", objectFit: "cover"}}/>
+          <img src={images[currentIndex]} alt="Carousel" style={{width: "100%", objectFit: "fill"}}/>
         </div>
         <div className='buttons-div'>
-          <Button onClick={goToPrevious}>Previous</Button>
-          <Button onClick={goToNext}>Next</Button>
+          <Button onClick={goToPrevious} style={{backgroundColor: "#f5e1ee"}}>Previous</Button>
+          <Button onClick={goToNext} style={{backgroundColor: "#f5e1ee"}}>Next</Button>
         </div>
       </div>
     )
