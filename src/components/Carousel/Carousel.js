@@ -24,8 +24,8 @@ function Carousel({images}) {
           <img src={images[currentIndex]} alt="Carousel" style={{width: "100%", objectFit: "fill"}}/>
         </div>
         <div className='buttons-div'>
-          <Button onClick={goToPrevious} style={{backgroundColor: "#f5e1ee"}}>Previous</Button>
-          <Button onClick={goToNext} style={{backgroundColor: "#f5e1ee"}}>Next</Button>
+          <Button onClick={goToPrevious} color="success">Previous</Button>
+          <Button onClick={goToNext} color="success">Next</Button>
         </div>
       </div>
     )
